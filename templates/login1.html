@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<!--this is related to flask_message_flashing-->
+
+<html>
+
+<body>
+    <h1>Login</h1>
+    {%if error%}
+    <strong>Error:</strong>{{error}}
+    {%endif%}
+    <form action="" method=post>
+        <dl>
+            <dt>username:</dt>
+            <dd><input type="text" name="username" value="{{request.form.username}}"></dd>
+            <dt>password:</dt>
+            <dd><input type="password" name="password"></dd>
+        </dl>
+        <p><input type="submit" value="Login"></p>
+    </form>
+
+    </p>
+</body>
+
+</html>

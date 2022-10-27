@@ -1,0 +1,21 @@
+<!--this html file doesn't work-->
+<!--this is related to flask_framework_request_from_object.py-->
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+    <table border=1>
+        <!--for loop-->
+        {% for the key,value in result.iteritems() %}
+        <!--iteritems of the dictionary object is used to return an iterator-->
+        <tr>
+            <th>{{key}}</th>
+            <td>{{value}}</td>
+        </tr>
+        {% end for %}
+    </table>
+</body>
+
+</html>
